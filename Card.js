@@ -20,7 +20,7 @@ function Card({ userData }) {
   const cards = userData.map((card) => (
     <div
       key={card.Name}
-      className="card"
+      className={`card ${card.id}`}
       style={{ backgroundColor: `${card.backgroundColor}` }}
     >
       <div className="card-title">
